@@ -1,0 +1,166 @@
+/* Estilo geral do body */
+body {
+    background-color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Estilo da lista de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo dos itens da lista de navegação */
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Estilo dos links da lista de navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo dos links da lista de navegação quando passa o mouse */
+nav ul li a:hover,
+/* Estilo dos links da lista de navegação quando ativos */
+nav ul li a.active {
+    background-color: #000000;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 2rem;
+}
+
+/* Estilo do título dos projetos */
+.projects h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo da grade de projetos */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Estilo de cada projeto */
+.project {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s;
+}
+
+/* Estilo de cada projeto quando passa o mouse */
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo do título de cada projeto */
+.project h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Estilo do botão de cada projeto */
+.project button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo do botão de cada projeto quando passa o mouse */
+.project button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+/* Estilo do botão de fechar do modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilo do botão de fechar do modal quando passa o mouse */
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo do botão de voltar quando passa o mouse */
+.back-button:hover {
+    background-color: #0056b3;
+}

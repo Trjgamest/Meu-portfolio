@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Projetos</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h1>Meus Projetos</h1>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Aplicativo</h3>
+                    <p>Tecnologias: HTML, CSS, js.</p>
+                    <button onclick="openModal('project1')">Detalhes</button>
+                </div>
+                <div class="project">
+                    <h3>Meu portifolio</h3>
+                    <p>Tecnologias: html, css, javasript, php</p>
+                    <button onclick="openModal('project2')">Detalhes</button>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modais -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>Aplicativo</h2>
+        <p>
+            Este é um aplicativo que criei junto com um amigo como uma brincadeira.<br>
+            Porém, o projeto não foi muito adiante, e o aplicativo acabou ficando inacabado.<br>
+            Você pode encontrar o código no <a href="https://github.com/Trjgamest/aplicativodezuarmeuamigo.git" target="_blank">repositório do GitHub</a>.
+        </p>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>Meu portifolio</h2>
+            <p>
+                Este é o meu portfólio, criado com o objetivo de me ajudar a passar na prova.<br>
+                Me esforcei ao máximo para desenvolvê-lo, mesmo enfrentando vários desafios ao longo do caminho.
+            </p>            
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="goBack()" class="back-button">Voltar</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
